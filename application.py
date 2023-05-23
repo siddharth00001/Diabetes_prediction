@@ -14,7 +14,7 @@ def hello_world():
     return render_template('index.html')
 
 @app.route("/predictdiabetes",methods=["GET","POST"])
-def predict_dat():
+def predict_data():
     if request.method == "POST":
         Pregnancies = request.form.get('Pregnancies')
         Glucose = request.form.get('Glucose')
