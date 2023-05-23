@@ -31,7 +31,7 @@ def predict_data():
             result = 'Diabetic'
         else:
             result = 'Not Diabetic'
-        return render_template('singleprediction.html',result=result)
+        return render_template('singlepredictio.html',result=result)
 
     else:
         return render_template('home.html')
